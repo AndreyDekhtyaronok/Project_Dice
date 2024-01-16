@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgb(96, 2, 128), rgb(33, 4, 122)) fixed;
+}
+.balance{
+    width: 200px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 10%;
+    left: 90%;
+    background-color: #b0a0ffbb;
+    box-shadow: 0 15px 25px rgba(32, 0, 136, 0.675);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Poppins",sans-serif;
+}
+.container{
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #b0a0ffbb;
+    box-shadow: 0 15px 25px rgba(32, 0, 136, 0.675);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+}
+.dice-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    font-size: 16px;
+    margin: 30px 0;
+    font-weight: 500;
+}
+button{
+    background-color: #721cd3;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 15px 15px 15px;
+    margin: 0 0 15px;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(50deg) rotateY(30deg);
+    }
+    50%{
+        transform: rotate(-75deg) rotateY(-40deg);
+    }
+    100%{
+        transform: rotate(100deg) rotateY(20deg);
+    }
+}
